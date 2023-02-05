@@ -1,0 +1,77 @@
+body {
+  margin: 0 auto;
+  background: linear-gradient(
+    to right top,
+    rgba(69, 152, 224, 1) 36%,
+    rgba(25, 85, 170, 1) 67%
+  );
+  height: 100vh;
+  font-family: "Lato", sans-serif;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.countdownOpts {
+  display: flex;
+  justify-items: stretch;
+  font-size: 20px;
+}
+
+.countdownOpts .option {
+  padding: 20px;
+  background-color: #3f86c6;
+  border-bottom: 5px solid #32699b;
+  border-right: 2px solid #32699b;
+  color: #fdfcf7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: all 0.3s;
+  flex: 1;
+}
+
+.option:hover {
+  background-color: #225695;
+  cursor: pointer;
+}
+
+.option.active {
+  background-color: #225695;
+}
+
+.countdownOpts form {
+  flex: 2;
+  height: calc(100% - 15px);
+}
+
+input {
+  height: 100%;
+  font-size: 25px;
+  padding: 5px;
+  text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.countdownDisplay {
+  color: #fdfcf7;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.countdown-clock {
+  font-size: 10rem;
+}
+
+.countdown-beback {
+  font-size: 1.4rem;
+}
